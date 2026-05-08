@@ -1,0 +1,79 @@
+╔══════════════════════════════════════════════════════════════╗
+║     Nassau Candy — ML Internship Project Setup Guide         ║
+╚══════════════════════════════════════════════════════════════╝
+
+📁 FOLDER STRUCTURE:
+nassau_candy/
+├── Nassau_Candy_Distributor.csv   ← Dataset (add it here)
+├── analysis.py                    ← Step 1: EDA + Charts
+├── app.py                         ← Step 2: Streamlit Dashboard
+├── requirements.txt               ← Libraries list
+└── README.txt                     ← This file
+
+══════════════════════════════════════════════════════════════
+STEP 0 — FIRST TIME SETUP (only once)
+══════════════════════════════════════════════════════════════
+
+1. VS Code not installed? → https://code.visualstudio.com/
+2. Python not installed? → https://www.python.org/downloads/
+3. Keep the nassau_candy folder on the Desktop
+4. Also keep Nassau_Candy_Distributor.csv in this folder
+5. In VS Code → File → Open Folder → select nassau_candy
+6. Open the terminal (Ctrl + `) and type:
+
+   pip install -r requirements.txt
+
+══════════════════════════════════════════════════════════════
+STEP 1 — RUN ANALYSIS
+══════════════════════════════════════════════════════════════
+
+In the terminal, type:
+   python analysis.py
+
+You will get:
+✅ Data info
+✅ Product ranking table
+✅ Division performance
+✅ Pareto result (80/20 rule)
+✅ ML Clustering result
+✅ Charts — nassau_charts.png file will be saved
+
+══════════════════════════════════════════════════════════════
+STEP 2 — RUN DASHBOARD
+══════════════════════════════════════════════════════════════
+
+In the terminal, type:
+   streamlit run app.py
+
+The browser will open automatically: http://localhost:8501
+There will be 4 tabs:
+  📊 Product Profitability
+  🏢 Division Performance
+  💸 Cost vs Margin
+  📉 Pareto Analysis
+
+══════════════════════════════════════════════════════════════
+DELIVERABLES (files to submit)
+══════════════════════════════════════════════════════════════
+
+1. analysis.py       — EDA code
+2. app.py            — Streamlit dashboard
+3. nassau_charts.png — Charts image
+4. Research Paper    — Write in Google Docs (template below)
+
+RESEARCH PAPER TEMPLATE (in Google Docs):
+─────────────────────────────────────────
+Title: Product Line Profitability Analysis — Nassau Candy
+
+1. Introduction (What is the problem — 2 paragraphs)
+2. Dataset Description (table of fields)
+3. Methodology (cleaning → metrics → analysis → ML)
+4. Findings
+   4.1 Top profitable products (paste the chart)
+   4.2 Division performance
+   4.3 Pareto result
+   4.4 ML Clusters
+5. Recommendations
+   - Which products to reprice
+   - Which products to discontinue
+6. Conclusion
