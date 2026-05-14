@@ -20,7 +20,9 @@ A small end-to-end analytics project that cleans and analyzes Nassau Candy sales
 ├── analysis.py
 ├── app.py
 ├── requirements.txt
-└── README.txt
+├── data_processing.py
+├── Executive_Summary.md
+└── README.md
 ```
 
 ## Setup
