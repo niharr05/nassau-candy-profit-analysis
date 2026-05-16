@@ -208,6 +208,45 @@ def inject_css() -> None:
 
     .section-header { font-size: 1.1rem; font-weight: 600; margin: 10px 0 5px; color: var(--text-dark); }
 
+    /* --- RESPONSIVENESS --- */
+    @media (max-width: 768px) {
+        .hero {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 16px;
+        }
+        
+        .hero-kpi {
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+        }
+
+        .hero-title {
+            font-size: 1.6rem;
+        }
+
+        h1 { font-size: 1.8rem; }
+        h2 { font-size: 1.4rem; }
+        
+        /* Stack KPI columns in Streamlit */
+        [data-testid="column"] {
+            width: 100% !important;
+            flex: 1 1 100% !important;
+            min-width: 100% !important;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .hero-kpi {
+            grid-template-columns: 1fr;
+        }
+        
+        .hero-title {
+            font-size: 1.4rem;
+        }
+    }
+
     /* Override markdown text colors */
     .stMarkdown p, .stMarkdown li, .stMarkdown label, .stText, .stInfo, .stSuccess, .stWarning, .stError {
         color: var(--text-dark) !important;
